@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import {SampleLineChart, SampleBarChart} from './components/SampleChart'
+import { PDFViewer } from '@react-pdf/renderer';
+import TestDocument from './components/Document';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <PDFViewer>
+        <TestDocument />
+      </PDFViewer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
