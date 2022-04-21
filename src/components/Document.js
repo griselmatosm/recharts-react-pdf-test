@@ -52,19 +52,19 @@ const TestDocument = () => {
         <Text style={styles.title}>React PDF test</Text>
         <View style={styles.section}>
           <Text style={styles.chartTitle}>Line Chart</Text>
-          <View style={styles.sideBySide} debug={true}>
+          <View style={styles.sideBySide}>
             <ChartSvg width={500} height={800}>
               <SampleLineChart />
             </ChartSvg>
           </View>
           <Line style={styles.line} />
           <Text style={styles.chartTitle}>Bar Chart</Text>
-          <View debug={true}>
+          <View>
           <ChartSvg width={800} height={600}>
             <SampleBarChart />
           </ChartSvg>
           </View>
-          <View debug={true}>
+          <View>
           <ChartSvg>
             <CustomScatterChart />
           </ChartSvg>

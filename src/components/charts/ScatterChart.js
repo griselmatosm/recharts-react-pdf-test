@@ -26,7 +26,7 @@ const CustomScatterChart = () => {
           <CartesianGrid />
           <XAxis type="number" dataKey="x" name="stature" unit="cm" />
           <YAxis type="number" dataKey="y" name="weight" unit="kg" />
-          <Scatter name="A school" data={data} fill="#8884d8" />
+          <Scatter isAnimationActive={false} name="A school" data={data} fill="#8884d8" />
         </ScatterChart>
     );
   }

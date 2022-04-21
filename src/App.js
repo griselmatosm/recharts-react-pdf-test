@@ -1,4 +1,3 @@
-import {SampleLineChart, SampleBarChart} from './components/SampleChart'
 import { PDFViewer } from '@react-pdf/renderer';
 import TestDocument from './components/Document';
 
